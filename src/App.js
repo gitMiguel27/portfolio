@@ -9,9 +9,11 @@ const theme = createTheme({
       main: '#212121'
     }
   },
-  // typography: {
-  //   fontFamily: 
-  // }
+  typography: {
+    fontFamily: 'Old+Standard+TT',
+    fontWeightRegular: 400,
+    fontWeightBold: 700,
+  }
 })
 
 function App() {
