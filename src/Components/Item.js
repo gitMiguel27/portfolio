@@ -1,24 +1,26 @@
 import React from "react";
-import { Paper, Button, Card, CardMedia } from '@mui/material'
+import { Paper, Button, Card, CardMedia, Link } from '@mui/material'
 
 function Item({ item }) {
     return (
         <Paper>
             <h2>{item.title}</h2>
-            <p>{item.link}</p>
-            <Card >
+            <Card>
                 <CardMedia
-                    component="image"
+                    component="img"
                     alt={item.title}
-                    height="300"
-                    src={item.image}
+                    image={item.image}
+                    sx={{ height: "fit-content" }}
                 />
             </Card>
             {
                 item.stacks.map( (stack) => <p key={stack} >{stack}</p> )
             }
 
-            <Button className="project-button">
+            <Link href={item.link}>
+                GitHub
+            </Link>
+            <Button sx={{ mb: 5 }}>
                 Check it out!
             </Button>
         </Paper>
