@@ -1,10 +1,10 @@
 import React from "react";
+import Projects from "./Projects";
 import { Card, CardMedia, Typography, Grid } from '@mui/material';
 
 function Home() {
   return (
     <div className="Home">
-      {/* <img src={process.env.PUBLIC_URL + '/photos/Profile.jpeg'} alt="profile" /> */}
         <Card sx={{ maxWidth: 450, margin: 5 }}>
             <CardMedia
                 component="img"
@@ -14,10 +14,10 @@ function Home() {
                 sx={{ filter: "grayscale(90%)" }}
             />
         </Card>
-        <Typography variant="h3" fontWeight={'fontWeightBold'} margin={'auto'} mb={5} sx={{ maxWidth: 1000, textAlign: "left" }} >
-          My name is Miguel Nazario and I am a Curious and Creative Software Engineer.
+        <Typography variant="h4" fontWeight={'fontWeightBold'} margin={'auto'} mb={5} sx={{ maxWidth: 1000, textAlign: "left" }} >
+          Hi, I'm Miguel Nazario and I am a Curious and Creative Software Engineer.
         </Typography>
-        <Typography variant="h3" fontWeight={'fontWeightBold'} margin={'auto'} mb={10} sx={{ maxWidth: 1000, textAlign: "left" }} >
+        <Typography variant="h4" fontWeight={'fontWeightBold'} margin={'auto'} mb={10} sx={{ maxWidth: 1000, textAlign: "left" }} >
           Currently working as a volunteer mentor at Code the Dream. Before that, completed the Full Stack Web Development Program at the Flatiron School, and graduated from Vassar College with a Bachelor's in Philosophy.
         </Typography>
         <Grid container spacing={2} margin={'auto'} mb={10} sx={{ maxWidth: 1000 }}>
@@ -38,6 +38,7 @@ function Home() {
             </Typography>
           </Grid>
         </Grid>
+        <Projects />
     </div>
   );
 }
