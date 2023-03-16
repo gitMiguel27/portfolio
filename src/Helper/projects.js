@@ -16,7 +16,7 @@ export const projects = [
         "demo": "https://www.loom.com/share/cda9118c4bfd4b4289922f7f2c81297b",
         "link": "https://github.com/gitMiguel27/Pic-It-Up-In-Queens",
         "stacks": [
-            "React", "Vanilla CSS", "Ruby on Rails"
+            "React", "CSS", "Ruby on Rails"
         ]
     }
 ]
