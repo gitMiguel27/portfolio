@@ -20,10 +20,10 @@ function Slide({ item }) {
             </Stack>
             <Stack direction="row" spacing={2} m={3} justifyContent="center" alignItems="center" divider={<Divider orientation="vertical" flexItem />} >
                 <Link href={item.link} target="_blank" rel="noopener" underline="hover" display={"flex"}>
-                    GitHub
+                    Source Code
                 </Link>
                 <Link href={item.demo} target="_blank" rel="noopener" underline="hover" display={"flex"}>
-                    Demo
+                    Demo Video
                 </Link>
             </Stack>
         </Paper>
