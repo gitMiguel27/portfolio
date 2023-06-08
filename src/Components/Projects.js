@@ -5,7 +5,7 @@ import {projects} from "../Helper/projects";
 
 function Projects() {
     return (
-        <Carousel sx={{ width: 1000, height: "fit-content", margin: 'auto' }}>
+        <Carousel sx={{ maxWidth: 1000, height: "fit-content", margin: 'auto' }}>
             {
                 projects.map( (item) => <Slide key={item.id} item={item} /> )
             }
