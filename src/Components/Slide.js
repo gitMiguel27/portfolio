@@ -10,7 +10,7 @@ function Slide({ item }) {
                     component="img"
                     alt={item.title}
                     image={item.image}
-                    // sx={{ minHeight: "fit-content" }}
+                    sx={{ minWidth: "justifyContent" }}
                 />
             </Card>
             <Stack direction="row" spacing={2} m={3} justifyContent="center" alignItems="center" divider={<Divider orientation="vertical" flexItem />} >
