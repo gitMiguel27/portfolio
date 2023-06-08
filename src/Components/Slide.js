@@ -1,32 +1,33 @@
 import React from "react";
 import { Paper, Stack, Box, Card, CardMedia, Link, Divider, styled } from '@mui/material';
 
-// const Responsive = styled("div")(({ theme }) => ({
-//     [theme.breakpoints.down('sm')]: {
-//         width: 2500
-//     },
-//     [theme.breakpoints.up('sm')]: {
-//         width: "fit-content"
-//     },
-//     // [theme.breakpoints.down('sm')]: {
-//     //     height: "auto"
-//     // },
-//     // [theme.breakpoints.up('sm')]: {
-//     //     height: "auto"
-//     // }
-// }));
+const Responsive = styled("div")(({ theme }) => ({
+    [theme.breakpoints.down('sm')]: {
+        // width: "fit-content",
+        height: "fit-content"
+    },
+    // [theme.breakpoints.up('sm')]: {
+    //     width: "fit-content"
+    // },
+    // [theme.breakpoints.down('sm')]: {
+    //     height: "auto"
+    // },
+    // [theme.breakpoints.up('sm')]: {
+    //     height: "auto"
+    // }
+}));
 
 function Slide({ item }) {
     return (
-        // <Responsive>
+        <Responsive>
         <Paper sx={{ p: 3 }} square="true" elevation={0}>
             <h2>{item.title}</h2>
-            <Card>
+            <Card sx={{ maxWidth: 'xs', width: "fit-content" }}>
                 <CardMedia
                     component="img"
                     alt={item.title}
                     image={item.image}
-                    sx={{ maxWidth: 'xs' }}
+                    // sx={{ maxWidth: 'xs' }}
                 />
             </Card>
             <Stack direction="row" spacing={2} m={3} justifyContent="center" alignItems="center" divider={<Divider orientation="vertical" flexItem />} >
@@ -43,7 +44,7 @@ function Slide({ item }) {
                 </Link>
             </Stack>
         </Paper>
-        // </Responsive>
+        </Responsive>
     );
 }
 
