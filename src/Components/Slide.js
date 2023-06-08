@@ -5,12 +5,12 @@ function Slide({ item }) {
     return (
         <Paper sx={{ p: 3 }} square="true" elevation={0}>
             <h2>{item.title}</h2>
-            <Card sx={{ maxWidth: "justifyContent" }} >
+            <Card>
                 <CardMedia
                     component="img"
                     alt={item.title}
                     image={item.image}
-                    sx={{ minHeight: 250 }}
+                    // sx={{ minHeight: "fit-content" }}
                 />
             </Card>
             <Stack direction="row" spacing={2} m={3} justifyContent="center" alignItems="center" divider={<Divider orientation="vertical" flexItem />} >
