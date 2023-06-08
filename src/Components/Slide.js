@@ -1,18 +1,24 @@
 import React from "react";
 import { Paper, Stack, Box, Card, CardMedia, Link, Divider, styled } from '@mui/material';
 
-const Responsive = styled("div")(({ theme }) => ({
-    [theme.breakpoints.down('xs')]: {
-        width: 275
-    },
-    [theme.breakpoints.up('xs')]: {
-        width: "fit-content"
-    }
-}));
+// const Responsive = styled("div")(({ theme }) => ({
+//     [theme.breakpoints.down('sm')]: {
+//         width: 2500
+//     },
+//     [theme.breakpoints.up('sm')]: {
+//         width: "fit-content"
+//     },
+//     // [theme.breakpoints.down('sm')]: {
+//     //     height: "auto"
+//     // },
+//     // [theme.breakpoints.up('sm')]: {
+//     //     height: "auto"
+//     // }
+// }));
 
 function Slide({ item }) {
     return (
-        <Responsive>
+        // <Responsive>
         <Paper sx={{ p: 3 }} square="true" elevation={0}>
             <h2>{item.title}</h2>
             <Card>
@@ -37,7 +43,7 @@ function Slide({ item }) {
                 </Link>
             </Stack>
         </Paper>
-        </Responsive>
+        // </Responsive>
     );
 }
 
