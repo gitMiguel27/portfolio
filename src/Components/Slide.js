@@ -2,8 +2,11 @@ import React from "react";
 import { Paper, Stack, Box, Card, CardMedia, Link, Divider, styled } from '@mui/material';
 
 const Responsive = styled("div")(({ theme }) => ({
-    [theme.breakpoints.down('md')]: {
-        maxHeight: 475
+    [theme.breakpoints.down('xs')]: {
+        maxHeight: "justifyContent"
+    },
+    [theme.breakpoints.down('xs')]: {
+        maxWidth: 300
     }
 }));
 
@@ -17,7 +20,7 @@ function Slide({ item }) {
                     component="img"
                     alt={item.title}
                     image={item.image}
-                    sx={{ width: "justifyContent", maxHeight: 'md' }}
+                    sx={{ maxHeight: 'xs', maxWidth: 'xs' }}
                 />
             </Card>
             <Stack direction="row" spacing={2} m={3} justifyContent="center" alignItems="center" divider={<Divider orientation="vertical" flexItem />} >
