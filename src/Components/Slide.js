@@ -1,8 +1,15 @@
 import React from "react";
-import { Paper, Stack, Box, Card, CardMedia, Link, Divider } from '@mui/material'
+import { Paper, Stack, Box, Card, CardMedia, Link, Divider, styled } from '@mui/material';
+
+const Responsive = styled("div")(({ theme }) => ({
+    [theme.breakpoints.down('md')]: {
+        maxHeight: 475
+    }
+}));
 
 function Slide({ item }) {
     return (
+        <Responsive>
         <Paper sx={{ p: 3 }} square="true" elevation={0}>
             <h2>{item.title}</h2>
             <Card>
@@ -10,7 +17,7 @@ function Slide({ item }) {
                     component="img"
                     alt={item.title}
                     image={item.image}
-                    sx={{ width: "justifyContent", maxHeight: 'xs' }}
+                    sx={{ width: "justifyContent", maxHeight: 'md' }}
                 />
             </Card>
             <Stack direction="row" spacing={2} m={3} justifyContent="center" alignItems="center" divider={<Divider orientation="vertical" flexItem />} >
@@ -27,6 +34,7 @@ function Slide({ item }) {
                 </Link>
             </Stack>
         </Paper>
+        </Responsive>
     );
 }
 
