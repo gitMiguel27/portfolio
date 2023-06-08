@@ -4,7 +4,7 @@ import { Paper, Stack, Box, Card, CardMedia, Link, Divider, styled } from '@mui/
 const Responsive = styled("div")(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
         // width: "fit-content",
-        height: "fit-content"
+        maxHeight: 475
     },
     // [theme.breakpoints.up('sm')]: {
     //     width: "fit-content"
