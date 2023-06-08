@@ -3,10 +3,10 @@ import { Paper, Stack, Box, Card, CardMedia, Link, Divider, styled } from '@mui/
 
 const Responsive = styled("div")(({ theme }) => ({
     [theme.breakpoints.down('xs')]: {
-        maxHeight: "justifyContent"
+        width: 275
     },
-    [theme.breakpoints.down('xs')]: {
-        maxWidth: 300
+    [theme.breakpoints.up('xs')]: {
+        width: "fit-content"
     }
 }));
 
@@ -20,7 +20,7 @@ function Slide({ item }) {
                     component="img"
                     alt={item.title}
                     image={item.image}
-                    sx={{ maxHeight: 'xs', maxWidth: 'xs' }}
+                    sx={{ maxWidth: 'xs' }}
                 />
             </Card>
             <Stack direction="row" spacing={2} m={3} justifyContent="center" alignItems="center" divider={<Divider orientation="vertical" flexItem />} >
