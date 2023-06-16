@@ -10,7 +10,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'Old+Standard+TT',
+    fontFamily: 'Old Standard TT',
     fontWeightRegular: 400,
     fontWeightBold: 700,
   }
