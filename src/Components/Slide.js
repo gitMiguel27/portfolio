@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Stack, Box, Card, CardMedia, Link, Divider, styled } from '@mui/material';
+import { Paper, Stack, Box, Card, CardMedia, Link, Divider, Typography, styled } from '@mui/material';
 
 const Responsive = styled("div")(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
@@ -7,11 +7,16 @@ const Responsive = styled("div")(({ theme }) => ({
     }
 }));
 
+const projectTitle = {
+    textAlign: { xs: "center", sm: "left" },
+    fontSize: { xs: 18, sm: 20, md: 24 },
+};
+
 function Slide({ item }) {
     return (
         <Responsive>
             <Paper sx={{ p: 3 }} square="true" elevation={0}>
-                <h2>{item.title}</h2>
+            <Typography className="project-title" variant="h5" fontWeight={'fontWeightBold'} sx={ projectTitle }>{item.title}</Typography>
                 <Card sx={{ maxWidth: 'xs' }}>
                     <CardMedia
                         component="img"
