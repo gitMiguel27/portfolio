@@ -40,7 +40,7 @@ function Home() {
           </Grid>
           <Grid item xs={8} sm={9} md={9}>
             <Typography variant="h6">
-              Below are two projects that I believe showcase my strengths as a Full Stack Engineer. I particularly enjoy the Front-End side of programming as my tech mission is to create accessible, fun, and engaging user experiences.
+              I believe the following projects showcase my strengths as a Full Stack Engineer. I particularly enjoy the Front-End side of programming as my tech mission is to create accessible, fun, and engaging user experiences.
             </Typography>
           </Grid>
         </Grid>
