@@ -39,7 +39,7 @@ function Home() {
             Hi, I'm Miguel and I'm a <Box fontWeight='fontWeightBold' display='inline'>Curious and Creative</Box> Software Engineer.
           </Typography>
           <Typography variant="h4" sx={ introText } >
-            Currently working as a Sales Advisor at COS. Before that, I volunteered as a React Mentor at Code The Dream. I completed the <Box fontWeight='fontWeightBold' display='inline'>Full Stack Web Development</Box> program at the Flatiron School in NYC, and am a graduate of Vassar College with a Bachelor's in Philosophy.
+            Currently working as a Sales Advisor at COS. Before that, I volunteered as a Mentor at Code The Dream assisting students develop React skills. I completed the <Box fontWeight='fontWeightBold' display='inline'>Full Stack Web Development</Box> program at the Flatiron School in NYC, and am a graduate of Vassar College with a Bachelor's in Philosophy.
           </Typography>
         </Grid>
       </Grid>
