@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.070fd3fc.css",
-    "main.js": "/portfolio/static/js/main.e97cc844.js",
+    "main.js": "/portfolio/static/js/main.488f420c.js",
     "static/media/Pic-It-Up.png": "/portfolio/static/media/Pic-It-Up.37049fa70f3e9e2e4f54.png",
     "static/media/TheSkincarePlace.jpg": "/portfolio/static/media/TheSkincarePlace.daf6ea7c032b4d1e5076.jpg",
     "index.html": "/portfolio/index.html",
     "main.070fd3fc.css.map": "/portfolio/static/css/main.070fd3fc.css.map",
-    "main.e97cc844.js.map": "/portfolio/static/js/main.e97cc844.js.map"
+    "main.488f420c.js.map": "/portfolio/static/js/main.488f420c.js.map"
   },
   "entrypoints": [
     "static/css/main.070fd3fc.css",
-    "static/js/main.e97cc844.js"
+    "static/js/main.488f420c.js"
   ]
 }
