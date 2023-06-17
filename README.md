@@ -45,4 +45,5 @@ To deploy the site to GitHub Pages, however, you can either use this command:
 pnpm run deploy
 ```
 
-Or you can use the built-in GitHub Action called "Deploy".
+Or you can use the built-in GitHub Action called "Deploy static content to
+GitHub Pages".
