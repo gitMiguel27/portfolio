@@ -5,13 +5,20 @@ import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import PropTypes from "prop-types";
 
-function Slide(props) {
-  const { item } = props;
+const projectTitle = {
+  textAlign: { xs: "center", sm: "left" },
+  fontSize: { xs: 18, sm: 20, md: 24 },
+};
+
+function Slide({ item }) {
   return (
-    <Paper sx={{ p: 3 }} square={true} elevation={0}>
-      <h2>{item.title}</h2>
+    <Paper sx={{ p: 3 }} square="true" elevation={0}>
+      <Typography className="project-title" variant="h5" fontWeight={"fontWeightBold"} sx={projectTitle}>
+        {item.title}
+      </Typography>
       <Card sx={{ maxWidth: "xs" }}>
         <CardMedia component="img" alt={item.title} image={item.image} />
       </Card>

@@ -8,6 +8,12 @@ import Typography from "@mui/material/Typography";
 import ProfileImage from "../assets/miguel.jpg";
 import Projects from "./Projects";
 
+const introContainer = {
+  maxWidth: 1250,
+  marginX: "auto",
+  marginBottom: { xs: 5, md: 15 },
+};
+
 const profilePic = {
   maxWidth: 450,
   marginX: { xs: 4, sm: 2, md: 1 },
@@ -21,10 +27,28 @@ const introText = {
   marginY: { xs: 5 },
 };
 
+const subSectionContainer = {
+  maxWidth: 1000,
+  textAlign: { xs: "center", sm: "left" },
+  marginX: "auto",
+  marginBottom: { xs: 0, sm: 5, md: 10 },
+};
+
+const subSectionTitle = {
+  fontSize: { xs: 18, sm: 20, md: 24 },
+  marginX: { xs: 1 },
+};
+
+const subSectionContent = {
+  fontSize: { xs: 16, sm: 18, md: 20 },
+  marginX: { xs: 1 },
+  marginBottom: 5,
+};
+
 function Home() {
   return (
     <div className="Home">
-      <Grid container mb={15} mx={"auto"} sx={{ maxWidth: 1250 }}>
+      <Grid container className="intro-container" sx={introContainer}>
         <Grid item sm={5} md={5}>
           <div className="profile-pic">
             <Slide direction="right" in={true} easing={"ease-in"} timeout={1250} mountOnEnter unmountOnExit>
@@ -54,14 +78,14 @@ function Home() {
         </Grid>
       </Grid>
 
-      <Grid container spacing={0} xs={12} sm={10} md={8} mx={"auto"} mb={15} sx={{ maxWidth: 1000 }}>
-        <Grid item xs={3} sm={3} md={3}>
-          <Typography variant="h5" fontWeight={"fontWeightBold"}>
+      <Grid container className="sub-section-container" spacing={1} xs={12} sm={10} md={8} sx={subSectionContainer}>
+        <Grid item xs={12} sm={3} md={3}>
+          <Typography variant="h5" fontWeight={"fontWeightBold"} sx={subSectionTitle}>
             Experience
           </Typography>
         </Grid>
-        <Grid item xs={8} sm={9} md={9} mb={5}>
-          <Typography variant="h6">
+        <Grid item xs={11} sm={9} md={9}>
+          <Typography variant="h6" sx={subSectionContent}>
             I have 1 year of experience of utilizing my Full Stack skills with programs including{" "}
             <Box fontWeight="fontWeightBold" display="inline">
               React
@@ -82,13 +106,13 @@ function Home() {
             to not only excel in their studies but also discover new skills and passions.
           </Typography>
         </Grid>
-        <Grid item xs={3} sm={3} md={3}>
-          <Typography variant="h5" fontWeight={"fontWeightBold"}>
+        <Grid item xs={12} sm={3} md={3}>
+          <Typography variant="h5" fontWeight={"fontWeightBold"} sx={subSectionTitle}>
             Projects
           </Typography>
         </Grid>
-        <Grid item xs={8} sm={9} md={9}>
-          <Typography variant="h6">
+        <Grid item xs={11} sm={9} md={9}>
+          <Typography variant="h6" sx={subSectionContent}>
             I believe the following projects showcase my strengths as a Full Stack Engineer. I particularly enjoy the
             Front-End side of programming as my tech mission is to create accessible, fun, and engaging user
             experiences.
