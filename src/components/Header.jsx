@@ -14,22 +14,33 @@ function Header() {
         <AppBar
           position="static"
           sx={{
-            backgroundColor: "transparent",
-            color: "#212121",
+            backgroundColor: "#212121",
             boxShadow: "0px 0px 0px 0px",
           }}
         >
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Miguel
+              Miguel Nazario
             </Typography>
-            <IconButton color="inherit" href="https://www.linkedin.com/in/miguel-nazario/" target="_blank">
+            <IconButton
+              color="inherit"
+              href="https://www.linkedin.com/in/miguel-nazario/"
+              target="_blank"
+            >
               <LinkedInIcon />
             </IconButton>
-            <IconButton color="inherit" href="https://github.com/gitMiguel27" target="_blank">
+            <IconButton
+              color="inherit"
+              href="https://github.com/gitMiguel27"
+              target="_blank"
+            >
               <GitHubIcon />
             </IconButton>
-            <IconButton color="inherit" href="https://medium.com/@mnazario35" target="_blank">
+            <IconButton
+              color="inherit"
+              href="https://medium.com/@mnazario35"
+              target="_blank"
+            >
               <BookIcon />
             </IconButton>
           </Toolbar>

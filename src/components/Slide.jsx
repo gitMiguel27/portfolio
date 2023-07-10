@@ -16,7 +16,12 @@ const projectTitle = {
 function Slide({ item }) {
   return (
     <Paper sx={{ p: 3 }} square="true" elevation={0}>
-      <Typography className="project-title" variant="h5" fontWeight={"fontWeightBold"} sx={projectTitle}>
+      <Typography
+        className="project-title"
+        variant="h5"
+        fontWeight={"fontWeightBold"}
+        sx={projectTitle}
+      >
         {item.title}
       </Typography>
       <Card sx={{ maxWidth: "xs" }}>
@@ -42,10 +47,22 @@ function Slide({ item }) {
         alignItems="center"
         divider={<Divider orientation="vertical" flexItem />}
       >
-        <Link href={item.link} target="_blank" rel="noopener" underline="hover" display={"flex"}>
+        <Link
+          href={item.link}
+          target="_blank"
+          rel="noopener"
+          underline="hover"
+          display={"flex"}
+        >
           Source Code
         </Link>
-        <Link href={item.demo} target="_blank" rel="noopener" underline="hover" display={"flex"}>
+        <Link
+          href={item.demo}
+          target="_blank"
+          rel="noopener"
+          underline="hover"
+          display={"flex"}
+        >
           Demo Video
         </Link>
       </Stack>
